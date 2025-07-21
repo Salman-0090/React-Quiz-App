@@ -90,7 +90,7 @@ function App() {
     0
   );
   useEffect(function () {
-    fetch("http://localhost:8000/questions")
+    fetch("https://react-quiz-app-api-2.onrender.com/questions")
       .then((res) => res.json())
       .then((data) => dispatch({ type: "dataRecieved", payload: data }))
       .catch((err) => dispatch({ type: "dataFailed" }));
