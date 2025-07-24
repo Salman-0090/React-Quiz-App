@@ -27,6 +27,7 @@ body {
   color: var(--color-light);
   background-color: var(--color-darkest);
   padding: 3.2rem;
+  overflow-x: hidden;
 }
 
 .app {
@@ -37,11 +38,11 @@ body {
 }
 
 .main {
-  width: 50rem;
+  max-width: 50rem;
 }
 
 .app-header {
-  width: 66rem;
+  max-width: 66rem;
   margin-bottom: 4rem;
   display: flex;
   align-items: center;
@@ -58,7 +59,7 @@ body {
 }
 
 img {
-  width: 14rem;
+  width: 30%;
 }
 
 h1 {
@@ -257,4 +258,66 @@ progress {
 .counter * {
   font-size: inherit;
   padding: 0.8rem;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 4.6rem;
+  }
+
+  img {
+    width: 18%;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 3.6rem;
+  }
+
+  img {
+    width: 16%;
+  }
+
+  h2 {
+    font-size: 2.8rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  img {
+    width: 20%;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  h2 {
+    font-size: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.8rem;
+  }
 }
